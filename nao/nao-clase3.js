@@ -150,18 +150,27 @@ contadorPares ();
 }
 */
 
-function contadorImpar50 (number) {
-	var number = prompt("numero");
-	if (number % 2 !== 0) {
-		var limit = number + 50;
-		for (var i = 0; i <= limit; i + 2;) {
+// Corrección ejercicio 5 
+
+//el número con el que empezamos
+var inicio = Number(prompt('En qué numero empezamos?'));
+
+imprimeImpares(inicio);
+
+function imprimeImpares (inicio) {
+//Los siguientes 50 numeros acabaran en...
+var final = inicio + 50
+
+//desde el inicio hasta el final
+for (var i = inicio; i < final; i ++) {
+
+	// es impar 
+	if (i % 2 !== 0) {
 			console.log(i);
-		}
 	}
-};
 
-
-contadorImpar50 ();
+}
+}
 
 // EJERCICIO 7 //////////////////////////////////////////
 
