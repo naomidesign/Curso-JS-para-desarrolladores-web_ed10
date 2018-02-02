@@ -33,4 +33,37 @@ console.timeEnd("verConsoles")
 console.groupEnd();
 
 
+//DEBERES CLASE 4
+
+//Ejercicio 1
+
+/*
+1 - Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos:
+
+Objetivos:
+
+Captura el nombre del usuario usando prompt
+Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador".
+En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y calculando el tiempo que tarda en realizar la operación
+En caso negativo mostraremos un alert informativo. 
+*/
+
+var userName = prompt("nombre de usuario");
+var respuestaUser = confirm("Hola "+userName+". ¿Quieres comprobar tu navegador?");
+
+if (respuestaUser == true) {
+	console.group("respuestaUser");
+	console.time("respuestaUser");
+		console.log("%c Genial!! "+userName+"", "background-color: green; font-size: 24px; color: white;");
+	console.timeEnd("respuestaUser");
+	console.groupEnd();
+} else {
+	console.log("%c Oh "+userName+", ¿no deseas saberlo :(?", "background-color: red; font-size: 24px; color: white;");
+}
+
+
+
+
+
+
 
