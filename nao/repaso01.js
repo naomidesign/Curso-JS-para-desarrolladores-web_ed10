@@ -14,10 +14,11 @@ Valor de su producto
 var num = Number(prompt("Introduce un número"));
 var num2 = Number(prompt("Introduce otro número"));
 
+
 function resultadoSuma () {
 	resultadoSuma = num + num2;
 	if (isNaN(resultadoSuma)) {
-		console.log("error, eso no es un número")
+		console.log("error, eso no es un número");
 	} else {
 		return resultadoSuma
 	}
@@ -26,3 +27,17 @@ function resultadoSuma () {
 resultadoSuma();
 
 
+function resultadoResta () {
+	resultadoResta = num - num2;
+	if (isNaN(resultadoResta)) {
+		console.log("error, eso no es un número");
+	} else {
+		return resultadoResta
+	}
+}
+
+
+resultadoResta();
+
+
+console.log(resultadoSuma); console.log(resultadoResta); 
