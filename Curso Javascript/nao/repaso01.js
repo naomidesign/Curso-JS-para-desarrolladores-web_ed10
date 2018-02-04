@@ -84,13 +84,54 @@ function positiveCounter () {
 
 	console.log("Empieza la cuenta")
 
-	for (i = 100; i <= 100; i--) {
+	for (i = 100; i >= 0; i--) {
 		console.log(i)
 	}
 	console.log("Terminó la cuenta mágica")
 }
 
 positiveCounter();
+
+
+// EJERCICIO 4 ----------------------------------------------------------
+
+//Diseña un programa que imprima los numeros pares entre 0 y 100. 
+
+function contadorPares () {
+	var i = 2;
+	
+	console.log("empieza la cuenta");
+
+	for (i = 2; i <= 100; i + 2) {
+		console.log(i);
+	}
+	console.log("Terminó la cuenta")
+}
+
+contadorPares();
+
+
+//EJERCICIO 5 ------------------------------------------------------
+
+//Diseña un programa que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
+
+function pares50 {
+	var i = Number(prompt("Introduce un número"));
+	var limit = i + 50;
+
+	if (i % 2 === 0;) {
+		for (i = 0; i <= limit; i + 2) {
+			console.log(i)
+	} else {
+		var imPar = i + 1;
+		for (impar = 0; impar <= limit; impar + 2) {
+			console.log(impar + 2)
+		}
+	}
+
+	}
+
+}
 
 
 
