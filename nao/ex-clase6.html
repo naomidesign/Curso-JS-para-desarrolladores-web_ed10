@@ -1,0 +1,38 @@
+<html>
+
+	<body>
+		<div id="resultado"></div>
+
+		<button id="cambiar">Cambiar</button>
+
+		<script>
+			// Escribir en el div #resultado
+			var resultado = document.getElementById("resultado");
+			resultado.innerHTML = 'hola';
+
+			async function pilladatos () {
+	  			var url = 'https://randomuser.me/api';
+	  			var firstData = await fetch(url);
+	  			var data = await firstData.json();
+	  			console.log(data);
+	  			return data;  
+			}
+
+			async function escribeAdios (e) {
+				var randomuser = await pilladatos ();
+				console.log( randomuser.results[0].email);
+				resultado.innerHTML = email;
+
+			}
+
+			var adios = escribeAdios;
+
+			var botonCambiar = document.getElementById('cambiar')
+			botonCambiar.addElementListener("click", escribeAdios);
+			//
+
+		</script>
+
+	</body>
+
+</html>
