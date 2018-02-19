@@ -1,0 +1,29 @@
+<html>
+
+
+	<body>
+
+		<blockquote id="god-quote"></blockquote>
+		<button id="boton-random">GET DESIGN CODE</button>
+
+
+		<script>
+
+			// Escuchar el evento click del botón
+			var escribirQuote = document.getElementById('boton-random')
+			escribirQuote.addEventListener("click", cambiaDatos);
+
+
+			
+			// Cambia el div #resultado
+			
+  			 function format_quote(data){
+     		 return "<a href='"data.permalink"'>"data.quote
+			"<span class='author'>"data.author"</span></a>";
+   }
+</script>
+	
+
+	</body>
+
+</html>
